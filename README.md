@@ -1,4 +1,4 @@
-[![Docker Build Status](https://img.shields.io/docker/build/everpeace/docker-chainer.svg)](https://hub.docker.com/r/everpeace/docker-chainer/) [![ImageLayers Size](https://img.shields.io/imagelayers/image-size/everpeace/docker-chainer/latest.svg)]([![Docker Build Status](https://img.shields.io/docker/build/everpeace/docker-chainer.svg)](https://hub.docker.com/r/everpeace/docker-chainer/))
+[![Docker Build Status](https://img.shields.io/docker/build/jrottenberg/ffmpeg.svg)](https://hub.docker.com/r/everpeace/docker-chainer/) [![ImageLayers Size](https://img.shields.io/imagelayers/image-size/everpeace/docker-chainer/latest.svg)](https://hub.docker.com/r/everpeace/docker-chainer/)
 
 # docker-chainer
 
