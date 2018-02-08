@@ -1,3 +1,4 @@
+[![Docker Build Status](https://img.shields.io/docker/build/everpeace/docker-chainer.svg)](https://hub.docker.com/r/everpeace/docker-chainer/) [![ImageLayers Size](https://img.shields.io/imagelayers/image-size/everpeace/docker-chainer/latest.svg)]([![Docker Build Status](https://img.shields.io/docker/build/everpeace/docker-chainer.svg)](https://hub.docker.com/r/everpeace/docker-chainer/))
 
 # docker-chainer
 
@@ -33,7 +34,10 @@ $ ./gen-ssh-key.sh
 $ docker-compose up -d
 
 # once it was up, ready to ssh to 'mpi-master' with 'chainer' user.
-$ ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i ./tmp/ssh-key/id_rsa -p 3333 chainer@localhost -- ./train_mnist.sh
+$ ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null \
+    -i ./tmp/ssh-key/id_rsa \
+    -p 3333 chainer@localhost \ 
+    -- ./train_mnist.sh \
 ...
 ==========================================
 Num process (COMM_WORLD): 4
