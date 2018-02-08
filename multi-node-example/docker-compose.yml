@@ -1,0 +1,28 @@
+version: '3'
+services:
+  mpi-worker-0:
+    image: everpeace/docker-chainer:latest
+    volumes:
+      - ./tmp/ssh-key:/ssh-key/chainer
+  mpi-worker-1:
+    image: everpeace/docker-chainer:latest
+    volumes:
+      - ./tmp/ssh-key:/ssh-key/chainer
+  mpi-worker-2:
+    image: everpeace/docker-chainer:latest
+    volumes:
+      - ./tmp/ssh-key:/ssh-key/chainer
+  mpi-worker-3:
+    image: everpeace/docker-chainer:latest
+    volumes:
+      - ./tmp/ssh-key:/ssh-key/chainer
+  mpi-master:
+    image: everpeace/docker-chainer:latest
+    volumes:
+       - ${PWD}/tmp/ssh-key:/ssh-key/chainer
+       - ${PWD}/hostfile:/hostfile
+       - ${PWD}/train_mnist.sh:/home/chainer/train_mnist.sh
+    expose:
+      - "22"
+    ports:
+      - "3333:22"
